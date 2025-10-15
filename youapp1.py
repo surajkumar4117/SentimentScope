@@ -630,15 +630,16 @@ def about_me_section():
     # --- Social Links ---
     st.markdown("""
     <div style="margin-top: 10px;">
-        <a href="https://www.linkedin.com/in/rahul-kumar-a90b9922b">
+        <a href="https://www.linkedin.com/in/suraj-kumar-a22608260/">
             <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
         </a>
         &nbsp;
-        <a href="https://github.com/rahulkumar0134">
+        <a href="https://github.com/surajkumar4117">
             <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github" alt="GitHub">
         </a>
     </div>
     """, unsafe_allow_html=True)
+
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------
 if 'videos_data' not in st.session_state:
