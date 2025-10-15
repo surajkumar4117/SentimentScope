@@ -271,12 +271,12 @@ def preprocessing(input_text):
 @st.cache_resource
 def load_model():
     from tensorflow.keras.models import load_model
-    return load_model("/Users/surajkumar/Documents/Data_Science/Sentiment/sentiment_bilstm_model.h5")
+    return load_model(r"sentiment_bilstm_model.h5")
 
 @st.cache_resource
 def load_tokenizer():
     import pickle
-    with open("/Users/surajkumar/Documents/Data_Science/Sentiment//tokenizer.pkl", 'rb') as f:
+    with open(r"tokenizer.pkl", 'rb') as f:
         return pickle.load(f)
 
 model = load_model()
