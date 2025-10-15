@@ -24,6 +24,11 @@ import plotly.graph_objects as go
 import requests
 import time
 
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('punkt')
+nltk.download('punkt_tab')
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 API_KEY = st.secrets["YOUTUBE_API_KEY"]
