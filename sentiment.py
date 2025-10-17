@@ -190,7 +190,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # ✅ Correct Absolute Path
-local_image_path = "/Users/surajkumar/Documents/Data_Science/Sentiment/vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg"
+local_image_path = "vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg"
 bg_img_base64 = get_base64_of_bin_file(local_image_path)
 
 # ✅ USE f-string HERE
