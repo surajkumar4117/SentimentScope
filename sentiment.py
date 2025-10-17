@@ -25,6 +25,17 @@ import requests
 import time
 import streamlit as st
 
+
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('punkt')
+nltk.download('punkt_tab')
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Load Google Font (Roboto)
 st.markdown("""
     <style>
@@ -34,13 +45,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-API_KEY = "AIzaSyBSOqV5S5EyaGcNzUfGCzzDMeM0OAV5F7c"
-#AIzaSyBSOqV5S5EyaGcNzUfGCzzDMeM0OAV5F7c
-
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 st.markdown("""
     <style>
     /* Sidebar background */
